@@ -39,6 +39,8 @@ SET(BulletExampleBrowser_SRCS
 	../BasicDemo/BasicExample.h
 	../InverseDynamics/InverseDynamicsExample.cpp
 	../InverseDynamics/InverseDynamicsExample.h
+  ../InverseDynamicsIRB120/InverseDynamicsIRB120Example.cpp
+  ../InverseDynamicsIRB120/InverseDynamicsIRB120Example.h
 	../ForkLift/ForkLiftDemo.cpp
 	../ForkLift/ForkLiftDemo.h
 	../Tutorial/Tutorial.cpp
@@ -95,9 +97,9 @@ SET(BulletExampleBrowser_SRCS
 
 	../../Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp
 	../../Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp
-	../../Extras/Serialize/BulletFileLoader/bChunk.cpp		
+	../../Extras/Serialize/BulletFileLoader/bChunk.cpp
 	../../Extras/Serialize/BulletFileLoader/bFile.cpp
-	../../Extras/Serialize/BulletFileLoader/bDNA.cpp		
+	../../Extras/Serialize/BulletFileLoader/bDNA.cpp
 	../../Extras/Serialize/BulletFileLoader/btBulletFile.cpp
 
 	../Importers/ImportBsp/BspLoader.h

@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:macro name="abb_irb120" params="prefix">
+  <!-- link list -->
+  <link name="${prefix}base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/base_link.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="abb_orange">
+        <color rgba="1 0.43 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/base_link.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="cyan">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </collision>
+    <!-- <inertial>
+      <mass value="7.731"/>
+      <inertia ixx="0.02551918" ixy="-3.692e-005" ixz="0.00037463" iyy="0.02641777" iyz="4.26e-006" izz="0.02180975"/>
+      <origin rpy="0 0 0" xyz="0.003 6e-5 0.08978"/>
+    </inertial> -->
+  </link>
+  <link name="${prefix}link_1">
+    <visual>
+      <origin xyz="0 0 -0.163" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/link_1.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="abb_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.163" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/link_1.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="cyan"/>
+    </collision>
+    <inertial>
+      <mass value="6.004000e+00"/>
+      <inertia ixx="3.193406e-02" ixy="1.445000e-05" ixz="-3.272200e-04" iyy="2.637650e-02" iyz="-3.322410e-03" izz="2.386651e-02"/>
+      <origin rpy="0 0 0" xyz="6.400000e-04 -1.898000e-02 9.504000e-02"/>
+    </inertial>
+  </link>
+  <link name="${prefix}link_2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/link_2.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="abb_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/link_2.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="cyan"/>
+    </collision>
+    <inertial>
+      <mass value="4.187000e+00"/>
+      <inertia ixx="4.819772e-02" ixy="9.786000e-05" ixz="8.335000e-04" iyy="4.032172e-02" iyz="8.157000e-04" izz="1.476244e-02"/>
+      <origin rpy="0 0 0" xyz="4.270000e-03 -2.943000e-02 1.420400e-01"/>
+    </inertial>
+  </link>
+  <link name="${prefix}link_3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/link_3.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="abb_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/link_3.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="cyan"/>
+    </collision>
+    <inertial>
+      <mass value="3.173000e+00"/>
+      <inertia ixx="6.184840e-03" ixy="-1.183800e-04" ixz="1.878090e-03" iyy="1.540900e-02" iyz="5.370000e-06" izz="1.311689e-02"/>
+      <origin rpy="0 0 0" xyz="4.156000e-02 4.900000e-04 5.320000e-02"/>
+    </inertial>
+  </link>
+  <link name="${prefix}link_4">
+    <visual>
+      <origin xyz="-0.142 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/link_4.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="abb_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.142 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/link_4.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="cyan"/>
+    </collision>
+    <inertial>
+      <mass value="1.834000e+00"/>
+      <inertia ixx="2.705740e-03" ixy="1.267490e-03" ixz="2.493700e-04" iyy="6.155200e-03" iyz="1.437600e-04" izz="7.059200e-03"/>
+      <origin rpy="0 0 0" xyz="8.137000e-02 1.683000e-02 -4.330000e-03"/>
+    </inertial>
+  </link>
+  <link name="${prefix}link_5">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/link_5.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="abb_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/link_5.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="cyan"/>
+    </collision>
+    <inertial>
+      <mass value="1.271000e+00"/>
+      <inertia ixx="7.580000e-04" ixy="-2.620000e-05" ixz="-3.370000e-05" iyy="2.034000e-03" iyz="6.300000e-06" izz="1.921000e-03"/>
+      <origin rpy="0 0 0" xyz="1.155000e-02 1.370000e-03 1.010000e-03"/>
+    </inertial>
+  </link>
+  <link name="${prefix}link_6">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/visual/link_6.stl" scale="0.0254 0.0254 0.0254"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/irb120/collision/link_6.stl" />
+      </geometry>
+      <material name="cyan"/>
+    </collision>
+    <inertial>
+      <mass value="2.260000e-01"/>
+      <inertia ixx="6.800000e-05" ixy="-1.000000e-07" ixz="0.000000e+00" iyy="4.100000e-05" iyz="0.000000e+00" izz="4.100000e-05"/>
+      <origin rpy="0 0 0" xyz="-1.141100e-02 -8.000000e-05 -1.000000e-06"/>
+    </inertial>
+  </link>
+  <link name="${prefix}tool0"/>
+  <!-- end of link list -->
+
+  <!-- joint list -->
+  <joint name="${prefix}joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.163"/>
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}link_1"/>
+    <limit effort="76.6056808" lower="${-11*pi/12}" upper="${11*pi/12}" velocity="4.36332"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="${(fvmin1+fvmax1)/2}" friction="${(fcmin1+fcmax1)/2}"/>
+  </joint>
+  <joint name="${prefix}joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.127"/>
+    <parent link="${prefix}link_1"/>
+    <child link="${prefix}link_2"/>
+    <limit effort="66.795993" lower="${-11*pi/18}" upper="${11*pi/18}" velocity="4.36332"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="${(fvmin2+fvmax2)/2}" friction="${(fcmin2+fcmax2)/2}"/>
+  </joint>
+  <joint name="${prefix}joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.27"/>
+    <parent link="${prefix}link_2"/>
+    <child link="${prefix}link_3"/>
+    <limit effort="32.824192" lower="${-11*pi/18}" upper="${7*pi/18}" velocity="4.36332"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="${(fvmin3+fvmax3)/2}" friction="${(fcmin3+fcmax3)/2}"/>
+  </joint>
+  <joint name="${prefix}joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0.142 0 0.07"/>
+    <parent link="${prefix}link_3"/>
+    <child link="${prefix}link_4"/>
+    <limit effort="7.32805" lower="${-8*pi/9}" upper="${8*pi/9}" velocity="5.58505"/>
+    <axis xyz="1 0 0"/>
+    <dynamics damping="${(fvmin4+fvmax4)/2}" friction="${(fcmin4+fcmax4)/2}"/>
+  </joint>
+  <joint name="${prefix}joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.16 0 0"/>
+    <parent link="${prefix}link_4"/>
+    <child link="${prefix}link_5"/>
+    <limit effort="6.552888" lower="${-2*pi/3}" upper="${2*pi/3}" velocity="5.58505"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="${(fvmin5+fvmax5)/2}" friction="${(fcmin5+fcmax5)/2}"/>
+  </joint>
+  <joint name="${prefix}joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.072 0 0"/>
+    <parent link="${prefix}link_5"/>
+    <child link="${prefix}link_6"/>
+    <limit effort="10.03295" lower="${-20*pi/9}" upper="${20*pi/9}" velocity="7.33038"/>
+    <axis xyz="1 0 0"/>
+    <dynamics damping="${(fvmin6+fvmax6)/2}" friction="${(fcmin6+fcmax6)/2}"/>
+  </joint>
+  <joint name="${prefix}joint6-tool0" type="fixed">
+    <parent link="${prefix}link_6"/>
+    <child link="${prefix}tool0"/>
+    <origin rpy="0 ${pi/2} 0" xyz="0 0 0"/>
+  </joint>
+  <!-- end of joint list -->
+
+  <!-- ROS base_link to ABB World Coordinates transform -->
+  <link name="${prefix}base" />
+  <joint name="${prefix}base_link-base" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}base"/>
+  </joint>
+  </xacro:macro>
+</robot>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+
+<robot name="abb_irb120" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="irb120_macro.xacro"/>
+  <xacro:abb_irb120 prefix=""/>
+  <xacro:property name="pi" value="3.141592653589793"/>
+  <!-- Friction values: joint 1 -->
+  <xacro:property name="fcmin1" value="5.626137"/>
+  <xacro:property name="fcmax1" value="27.5759"/>
+  <xacro:property name="fvmin1" value="1.420235564"/>
+  <xacro:property name="fvmax1" value="4.456808246"/>
+  <!-- Friction values: joint 2 -->
+  <xacro:property name="fcmin2" value="6.05"/>
+  <xacro:property name="fcmax2" value="27.5759"/>
+  <xacro:property name="fvmin2" value="2.9282"/>
+  <xacro:property name="fvmax2" value="4.456808246"/>
+  <!-- Friction values: joint 3 -->
+  <xacro:property name="fcmin3" value="3.93092"/>
+  <xacro:property name="fcmax3" value="20.77873"/>
+  <xacro:property name="fvmin3" value="0.77517399"/>
+  <xacro:property name="fvmax3" value="2.258154566"/>
+  <!-- Friction values: joint 4 -->
+  <xacro:property name="fcmin4" value="0.35"/>
+  <xacro:property name="fcmax4" value="0.25965"/>
+  <xacro:property name="fvmin4" value="0.25965"/>
+  <xacro:property name="fvmax4" value="0.6224375"/>
+  <!-- Friction values: joint 5 -->
+  <xacro:property name="fcmin5" value="0.357"/>
+  <xacro:property name="fcmax5" value="4.46556"/>
+  <xacro:property name="fvmin5" value="0.27013986"/>
+  <xacro:property name="fvmax5" value="0.647583975"/>
+  <!-- Friction values: joint 6 -->
+  <xacro:property name="fcmin6" value="0.54005"/>
+  <xacro:property name="fcmax6" value="2.13965"/>
+  <xacro:property name="fvmin6" value="0.10369"/>
+  <xacro:property name="fvmax6" value="0.38679"/>
+</robot>

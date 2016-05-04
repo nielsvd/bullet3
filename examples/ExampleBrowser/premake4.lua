@@ -58,11 +58,11 @@ if os.is("Linux") then
 end
 
 
-	
+
 project "BulletExampleBrowserLib"
 
 		hasCL = findOpenCL("clew")
-	
+
 		if (hasCL) then
 
 				-- project ("App_Bullet3_OpenCL_Demos_" .. vendor)
@@ -72,7 +72,7 @@ project "BulletExampleBrowserLib"
 		end
 
 		language "C++"
-				
+
 		kind "StaticLib"
 
   	includedirs {
@@ -88,12 +88,12 @@ project "BulletExampleBrowserLib"
 		files {"../LuaDemo/LuaPhysicsSetup.cpp"}
 	end
 
-			
+
 		initOpenGL()
 		initGlew()
 
 		defines {"INCLUDE_CLOTH_DEMOS"}
-			
+
 
 
 		files {
@@ -134,6 +134,8 @@ project "BulletExampleBrowserLib"
 		"../MultiThreading/b3ThreadSupportInterface.cpp",
 		"../InverseDynamics/InverseDynamicsExample.cpp",
 		"../InverseDynamics/InverseDynamicsExample.h",
+    "../InverseDynamicsIRB120/InverseDynamicsIRB120Example.cpp",
+    "../InverseDynamicsIRB120/InverseDynamicsIRB120Example.h",
 		"../BasicDemo/BasicExample.*",
 		"../Tutorial/*",
 		"../Collision/*",
@@ -143,7 +145,7 @@ project "BulletExampleBrowserLib"
 		"../ForkLift/ForkLiftDemo.*",
 		"../Importers/**",
 		"../../Extras/Serialize/BulletWorldImporter/*",
-		"../../Extras/Serialize/BulletFileLoader/*",	
+		"../../Extras/Serialize/BulletFileLoader/*",
 		"../Planar2D/Planar2D.*",
 		"../RenderingExamples/*",
 		"../VoronoiFracture/*",
@@ -189,7 +191,7 @@ project "BulletExampleBrowserLib"
     "../ThirdPartyLibs/urdf/boost_replacement/string_split.h",
 
 		}
-		
+
 		if (hasCL and findOpenGL3()) then
 			files {
 				"../OpenCL/broadphase/*",
@@ -199,9 +201,6 @@ project "BulletExampleBrowserLib"
 			}
 		end
 
-if os.is("Linux") then 
+if os.is("Linux") then
 	initX11()
 end
-
-			
-
